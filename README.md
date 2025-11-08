@@ -2,128 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lizard Flick - README</title>
-  <meta name="viewport" content="width=550">
+  <title>Lizard Flick - Small README</title>
+  <meta name="viewport" content="width=400">
   <style>
-    @keyframes movingBg {
+    @keyframes bgmove {
       0% { background-position: 0% 50%; }
       100% { background-position: 100% 50%; }
     }
     body {
       font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
       margin: 0;
-      background: linear-gradient(135deg, #efffd6 0%, #b7e684 100%);
-      color: #345d20;
+      background: linear-gradient(90deg, #8fd576, #53fba3, #f3f25b, #f68949, #8fd576);
+      background-size: 300% 300%;
+      animation: bgmove 5s linear infinite;
+      color: #1e3d19;
       min-height: 100vh;
-      font-size: 14px;
-      padding: 0 2vw;
+    }
+    .container {
+      max-width: 330px;
+      background: #f8fceccc;
+      padding: 16px 12px 12px 12px;
+      border-radius: 10px;
+      margin: 40px auto;
+      box-shadow: 0 2px 18px #b7e68444;
     }
     .heading-animated {
       text-align: center;
-      font-size: 1.55em;
+      font-size: 1.5em;
       font-weight: bold;
-      margin-top: 26px;
-      margin-bottom: 14px;
-      padding: 8px 0;
-      background: linear-gradient(90deg, #81c07d, #e1ea6e, #f7b66c, #81c07d);
+      margin-bottom: 16px;
+      padding: 11px 0;
+      background: linear-gradient(90deg, #8fd576, #f3f25b, #f68949, #8fd576);
       background-size: 200% 200%;
-      color: #2c4a10;
-      border-radius: 11px;
-      border: 1px solid #81c07d;
-      box-shadow: 0 2px 10px #bfb;
+      border-radius: 8px;
+      border: 1.5px solid #8fd576;
+      box-shadow: 0 2px 10px #8fd57633;
+      color: #1e3d19;
       letter-spacing: 2px;
-      animation: movingBg 3s linear infinite;
+      animation: bgmove 5s linear infinite;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
     }
-    .container {
-      max-width: 430px;
-      margin: 0 auto;
-      background: #f8fceccc;
-      border-radius: 10px;
-      box-shadow: 0 1px 7px #bddbbd60;
-      padding: 18px 17px 13px 17px;
-      margin-bottom: 24px;
-    }
-    h2 {
-      color: #20983a;
-      font-size: 1em;
-      margin-bottom: 5px;
-      margin-top: 16px;
-    }
-    ul, ol {
-      margin-top: 4px;
-      margin-bottom: 10px;
-      padding-left: 17px;
+    ul {
+      margin: 6px 0 10px 18px;
+      font-size: 0.99em;
     }
     li {
-      font-size: 0.98em;
-      padding: 1px 0;
-    }
-    .code-block {
-      background: #eefbe0;
-      color: #32530d;
-      font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
-      font-size: 0.95em;
-      border-radius: 7px;
-      margin-bottom: 11px;
-      margin-top: 4px;
-      padding: 8px;
-      border: 1px solid #cbeeb3;
-      overflow-x: auto;
+      margin: 3px 0;
     }
     .license {
-      background: #fbffeccc;
-      padding: 5px 9px;
-      border-radius: 7px;
-      margin-bottom: 8px;
-      font-weight: bold;
-      font-size: 0.98em;
+      background: #eff8ce;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.93em;
+      display: inline-block;
+      margin-top: 8px;
+      margin-bottom: 2px;
     }
     .thanks {
-      color: #98b944;
-      font-style: italic;
-      margin-top: 8px;
-      font-size: 0.98em;
       text-align: center;
-    }
-    @media (max-width: 500px) {
-      .container { max-width: 96vw; padding: 4vw; }
+      color: #91b944;
+      font-size: 0.96em;
+      margin-top: 6px;
     }
   </style>
 </head>
 <body>
-  <div class="heading-animated">🦎 Lizard Flick</div>
   <div class="container">
-    <h2>About</h2>
-    <p><b>Lizard Flick</b> is a quick, fun flicking game! Flick the lizard, dodge obstacles, and collect bugs for points.</p>
-
-    <h2>Features</h2>
+    <div class="heading-animated">Lizard Flick</div>
     <ul>
-      <li>Easy flick controls (touch, mouse, trackpad)</li>
-      <li>Collect insects &amp; powerups</li>
-      <li>Unlock lizard skins and upgrades</li>
-      <li>Compete for high scores</li>
+      <li>Fun flicking game!</li>
+      <li>Drag/flick your lizard.</li>
+      <li>Collect bugs & powerups.</li>
+      <li>Simple controls, quick play.</li>
     </ul>
-
-    <h2>Play (HTML Demo)</h2>
-    <div class="code-block">
-&lt;canvas id="gameCanvas" width="320" height="240"&gt;&lt;/canvas&gt;<br>
-&lt;script src="game.js"&gt;&lt;/script&gt;
-    </div>
-
-    <h2>How to Run</h2>
-    <ol>
-      <li>Clone: <span class="code-block">git clone https://github.com/&lt;your-username&gt;/lizard-flick.git</span></li>
-      <li>Open <b>index.html</b> in a browser</li>
-    </ol>
-    <h2>License</h2>
-    <div class="license">MIT</div>
-    <div class="thanks">
-      Flick fast, be the best lizard!<br>
-      <span style="font-size:0.92em;">Graphics: <a href="https://opengameart.org/">OpenGameArt</a></span>
-    </div>
+    <div class="license"> GNU License</div>
+    <div class="thanks">Flick fast. Be the best lizard!</div>
   </div>
 </body>
 </html>
