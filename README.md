@@ -30,7 +30,7 @@ Pull requests and feedback are welcome—help us make this lizard even slicker!
 
 ## License
 
-MIT License    <ul>
+GNU License    <ul>
       <li>Fun flicking game!</li>
       <li>Drag/flick your lizard.</li>
       <li>Collect bugs & powerups.</li>
