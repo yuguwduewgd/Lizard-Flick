@@ -18,7 +18,6 @@ Lizard Flick is a vibrant, reflex-based game where speed and precision determine
    ```bash
    git clone https://github.com/<your-username>/lizard-flick.git
    ```
-2. Follow setup instructions in [`INSTALL.md`](INSTALL.md) (if available), or run the game using the provided script/executable.
 
 ## Gameplay
 
@@ -32,8 +31,7 @@ Lizard Flick is a vibrant, reflex-based game where speed and precision determine
 Pull requests and feedback are welcome—help us make this lizard even slicker!
 
 ## License
-
-GNU License    <ul>
+    
       <li>Fun flicking game!</li>
       <li>Drag/flick your lizard.</li>
       <li>Collect bugs & powerups.</li>
